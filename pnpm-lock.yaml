@@ -8,9 +8,15 @@ importers:
 
   .:
     devDependencies:
+      '@types/node':
+        specifier: ^22.15.18
+        version: 22.15.18
       '@wdio/cli':
         specifier: ^9.13.0
         version: 9.13.0
+      '@wdio/globals':
+        specifier: ^9.13.0
+        version: 9.13.0(@wdio/logger@9.4.4)
       '@wdio/local-runner':
         specifier: ^9.13.0
         version: 9.13.0
@@ -20,6 +26,9 @@ importers:
       '@wdio/spec-reporter':
         specifier: ^9.13.0
         version: 9.13.0
+      prettier:
+        specifier: ^3.5.3
+        version: 3.5.3
       tsx:
         specifier: ^4.19.4
         version: 4.19.4
@@ -308,8 +317,8 @@ packages:
   '@types/node@20.17.46':
     resolution: {integrity: sha512-0PQHLhZPWOxGW4auogW0eOQAuNIlCYvibIpG67ja0TOJ6/sehu+1en7sfceUn+QQtx4Rk3GxbLNwPh0Cav7TWw==}
 
-  '@types/node@22.15.17':
-    resolution: {integrity: sha512-wIX2aSZL5FE+MR0JlvF87BNVrtFWf6AE6rxSE9X7OwnVvoyCQjpzSRJ+M87se/4QCkCiebQAqrJ0y6fwIyi7nw==}
+  '@types/node@22.15.18':
+    resolution: {integrity: sha512-v1DKRfUdyW+jJhZNEI1PYy29S2YRxMV5AOO/x/SjKmW0acCIOqmbj6Haf9eHAhsPmrhlHSxEhv/1WszcLWV4cg==}
 
   '@types/normalize-package-data@2.4.4':
     resolution: {integrity: sha512-37i+OaWTh9qeK4LSHPsyRC7NahnGotNuZvjLSgcPzblpHB3rrCJxAOgI5gCdKm7coonsaX1Of0ILiTcnZjbfxA==}
@@ -1297,6 +1306,11 @@ packages:
     resolution: {integrity: sha512-JU3teHTNjmE2VCGFzuY8EXzCDVwEqB2a8fsIvwaStHhAWJEeVd1o1QD80CU6+ZdEXXSLbSsuLwJjkCBWqRQUVA==}
     engines: {node: '>=8.6'}
 
+  prettier@3.5.3:
+    resolution: {integrity: sha512-QQtaxnoDJeAkDvDKWCLiwIXkTgRhwYDEQCghU9Z6q03iyek/rxRh/2lC3HB7P8sWT2xC/y5JDctPLBIGzHKbhw==}
+    engines: {node: '>=14'}
+    hasBin: true
+
   pretty-format@29.7.0:
     resolution: {integrity: sha512-Pdlw/oPxN+aXdmM9R00JVC9WVFoCLTKJvDVLgmJ+qAffBMxsV85l/Lu7sNx4zSzPyoL2euImuEwHhOXdEgNFZQ==}
     engines: {node: ^14.15.0 || ^16.10.0 || >=18.0.0}
@@ -1819,7 +1833,7 @@ snapshots:
       '@inquirer/figures': 1.0.11
       '@inquirer/type': 2.0.0
       '@types/mute-stream': 0.0.4
-      '@types/node': 22.15.17
+      '@types/node': 22.15.18
       '@types/wrap-ansi': 3.0.0
       ansi-escapes: 4.3.2
       cli-width: 4.1.0
@@ -1919,7 +1933,7 @@ snapshots:
       '@jest/schemas': 29.6.3
       '@types/istanbul-lib-coverage': 2.0.6
       '@types/istanbul-reports': 3.0.4
-      '@types/node': 20.17.46
+      '@types/node': 22.15.18
       '@types/yargs': 17.0.33
       chalk: 4.1.2
 
@@ -1967,13 +1981,13 @@ snapshots:
 
   '@types/mute-stream@0.0.4':
     dependencies:
-      '@types/node': 20.17.46
+      '@types/node': 22.15.18
 
   '@types/node@20.17.46':
     dependencies:
       undici-types: 6.19.8
 
-  '@types/node@22.15.17':
+  '@types/node@22.15.18':
     dependencies:
       undici-types: 6.21.0
 
@@ -1989,7 +2003,7 @@ snapshots:
 
   '@types/ws@8.18.1':
     dependencies:
-      '@types/node': 20.17.46
+      '@types/node': 22.15.18
 
   '@types/yargs-parser@21.0.3': {}
 
@@ -1999,7 +2013,7 @@ snapshots:
 
   '@types/yauzl@2.10.3':
     dependencies:
-      '@types/node': 22.15.17
+      '@types/node': 22.15.18
     optional: true
 
   '@vitest/pretty-format@2.1.9':
@@ -2889,7 +2903,7 @@ snapshots:
   jest-util@29.7.0:
     dependencies:
       '@jest/types': 29.6.3
-      '@types/node': 20.17.46
+      '@types/node': 22.15.18
       chalk: 4.1.2
       ci-info: 3.9.0
       graceful-fs: 4.2.11
@@ -3129,6 +3143,8 @@ snapshots:
   picocolors@1.1.1: {}
 
   picomatch@2.3.1: {}
+
+  prettier@3.5.3: {}
 
   pretty-format@29.7.0:
     dependencies:
